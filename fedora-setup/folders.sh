@@ -5,7 +5,7 @@ mv ~/Documents/ ~/documents/
 mv ~/Downloads/ ~/downloads/
 mv ~/Music/ ~/music/
 mv ~/Pictures/ ~/pictures/
-mv ~/videos/ ~/videos/
+mv ~/Videos/ ~/videos/
 
 # Delete unnecessary folders
 rm -r ~/Desktop/ ~/Public/ ~/Templates/
