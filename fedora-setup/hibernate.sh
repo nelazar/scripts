@@ -25,3 +25,4 @@ unzip hibernate-extension.zip -d ~/extensions/gnome-shell/hibernate-status
 mkdir -p ~/.local/share/gnome-shell/extensions/hibernate-status@ctsdownloads
 cp -r ~/extensions/gnome-shell/hibernate-status/hibernate-status@ctsdownloads/* ~/.local/share/gnome-shell/extensions/hibernate-status@ctsdownloads
 gnome-extensions enable hibernate-status@ctsdownloads
+reboot -f
