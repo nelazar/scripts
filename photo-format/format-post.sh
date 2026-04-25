@@ -6,7 +6,7 @@ function generate_photo () {
     path=$(dirname "$0")
 
     echo "Generating final photo for $photo"
-    magick -size 3500x3500 xc:white "$0" -gravity center -compose over -composite "$path/Final/$photo"
+    convert -size 3500x3500 xc:white "$0" -gravity center -compose over -composite "$path/Final/$photo"
 }
 export -f generate_photo
 
@@ -25,4 +25,9 @@ function format_photos () {
 export -f format_photos
 
 # Find all "... Post" directories that don't have formatted versions and format the photos
-find /mnt/c/Users/noahb/Photography/Film/ -name "* Post" -exec /usr/bin/env bash -c "format_photos" {} \;
+find /mnt/c/Users/nelazar/Photography/Film/ -name "* Post" -exec /usr/bin/env bash -c "format_photos" {} \;
+
+# for path in "$@"
+# do
+#     format_photos "$path"
+# done
